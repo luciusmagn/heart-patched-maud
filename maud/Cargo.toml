@@ -1,9 +1,9 @@
 [package]
-name = "maud"
+name = "heart-patched-maud"
 # When releasing a new version, please update html_root_url in src/lib.rs
 version = "0.26.0"
-documentation = "https://docs.rs/maud/"
-description = "Compile-time HTML templates."
+documentation = "https://docs.rs/heart-patched-maud/"
+description = "Compile-time HTML templates. (patched for HEART - do not use)"
 categories = ["template-engine"]
 
 authors.workspace = true
@@ -20,7 +20,7 @@ actix-web = ["actix-web-dep", "futures-util"]
 axum = ["axum-core", "http"]
 
 [dependencies]
-maud_macros = { version = "0.26.0", path = "../maud_macros" }
+heart-patched-maud_macros = { version = "0.26.0", path = "../maud_macros" }
 itoa = "1"
 rocket = { version = "0.5", optional = true }
 futures-util = { version = "0.3.0", optional = true, default-features = false }
